@@ -218,6 +218,12 @@ article {
     .wrapper {
         width: 100%;
     }
+    article {
+        width: 100vw;
+    }
+    aside {
+        width: 100vh;
+    }
 }
 
 /*Image grid style*/
