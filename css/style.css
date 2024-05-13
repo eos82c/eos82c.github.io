@@ -215,6 +215,9 @@ article {
     .mobile-menu a:hover {
         background: #4c6358;
     }
+    .wrapper {
+        width: 100vw;
+    }
 }
 
 /*Image grid style*/
