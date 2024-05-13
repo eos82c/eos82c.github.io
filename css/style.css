@@ -141,10 +141,10 @@ img {
 }
 
 aside {
-    flex: 4;
+    width: 40vw;
 }
 article {
-    flex: 6;
+    width: 60vw;
 	padding: 5vi;
     text-align: center;
 }
