@@ -185,9 +185,6 @@ article {
         flex: none;
         width: 100vw;
     }
-    .grid-container {
-        width: 100vw;
-    }
     .menu li {
         display: none;
     }
@@ -222,6 +219,7 @@ article {
     .mobile-menu a:hover {
         background: #4c6358;
     }
+
 }
 
 /*Image grid style*/
@@ -229,7 +227,7 @@ article {
 	width: 80%;
 	display: grid;
 	grid-template-columns: repeat(3, 30vw);
-	gap: 10px;
+    gap: 10px;
 }
 
 .grid-item {
@@ -329,10 +327,9 @@ article {
 
 .carousel {
     position: relative;
-    width: 600px; /*photos have 4x3 aspect ratio generally. */
+    width: 600px; 
     height: 400px;
     overflow: hidden;
-    float: left;
     margin: 0px;
 }
 
@@ -348,6 +345,7 @@ article {
 .carousel-images img {
     width: 600px;
     height: 400px;
+    object-fit: cover;
 }
 
 .carousel nav {
@@ -356,25 +354,25 @@ article {
     position: absolute;
     z-index: 2;
     width: 600px;
-    height: 400px;
-    line-height: 200px;
+    height: 450px;
+    line-height: 325px;
 }
 
 .carousel nav a {
     text-decoration: none;
-    color:  #2d3632;
+    color:  #EDE3D3;
     font-weight: bold;
     padding: 0px 10px;
     transition: all .25s ease;
     opacity: 0;
-    background-color: #EDE3D3;
+    background-color: #2d3632;
     font-size: 3em;
 }
 
 .carousel nav:hover a {
     transition: all .25s ease;
-    opacity: 1;
-    background-color: #EDE3D3;
+    opacity: 0.7;
+    background-color: #2d3632;
 }
 
 .carousel-caption {
@@ -383,12 +381,11 @@ article {
     bottom: 0;
     text-align: center;
     width:100%;
-    color: #2d3632;
-    background-color: #BBD0C0;
+    color: #ede3d3;
+    background-color: #2d3632;
     height: 50px;
     line-height: 50px;
     margin: 0px;
-    font-weight: bold;
 }
 
 .img-section-about {
