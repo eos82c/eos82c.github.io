@@ -1,4 +1,4 @@
-var images = document.getElementById('carouselImages');
+var imagesContainer = document.getElementById('carouselImages');
 var caption = document.getElementById('carouselCaption');
 var prev = document.getElementById('carouselPrev');
 var next = document.getElementById('carouselNext');
@@ -17,7 +17,7 @@ fetch("assets/coursegallery.json")
       image.setAttribute('alt', element.caption);    
       image.setAttribute('title', element.caption);  
 
-      images.appendChild(image);
+      imagesContainer.appendChild(image);
     });
     
     setupCarousel(json);
@@ -27,14 +27,14 @@ fetch("assets/coursegallery.json")
 
 function setupCarousel(json) {
  
-  var imageCount = images.childElementCount;
+  var imageCount = imagesContainer.childElementCount;
   var currentImage = 1;
   var imageWidth = 400;
   
   prev.addEventListener('click', function() {
     if(currentImage != 1) {
       --currentImage;
-      images.style.left = imageWidth - (currentImage * imageWidth) + 'px';
+      imagesContainer.style.left = imageWidth - (currentImage * imageWidth) + 'px';
     }
     caption.innerText = json[currentImage - 1].caption;
   });
@@ -42,7 +42,7 @@ function setupCarousel(json) {
   next.addEventListener('click', function() {
     if(currentImage != imageCount) {
       ++currentImage;
-      images.style.left = imageWidth - (currentImage * imageWidth) + 'px';
+      imagesContainer.style.left = imageWidth - (currentImage * imageWidth) + 'px';
     }
     caption.innerText = json[currentImage - 1].caption;
   });
