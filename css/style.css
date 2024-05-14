@@ -4,11 +4,10 @@ body {
     background-color: #FFF5F4;
     margin: 0px;
 	width: 100vw;
-
 }
 
 .wrapper {
-    height: 100v%;
+    height: 100%;
 }
 
 .logo {
@@ -221,6 +220,11 @@ article {
 
 }
 
+@media (min-width: 1360px) {
+    html, body {
+        font-size: 1.2em;
+    }
+}
 /*Image grid style*/
 .grid-container {
 	width: 80%;
