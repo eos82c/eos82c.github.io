@@ -3,11 +3,12 @@ body {
     font-family: "Average Sans", sans-serif;
     background-color: #FFF5F4;
     margin: 0px;
-	width: 100%;
+	width: 100vw;
+
 }
 
 .wrapper {
-    height: 100vh; 
+    height: 100vh;
 }
 
 .logo {
@@ -30,7 +31,7 @@ header {
     height: 10vh;
     max-height: 150px;
     min-height: 150px;
-	width: 100%;
+	width: 100vw;
 	justify-content: space-between;
     z-index: 100;
 }
@@ -75,10 +76,6 @@ section {
 	display: flex;
 }
 
-.gold-section {
-	background: #EDE3D3;
-	display: flex;
-}
 
 main {
     display: inline;
@@ -101,7 +98,7 @@ footer {
 
 footer nav{
 	display: flex;
-	width: 100%;
+	width: 100vw;
 	align-items: center;
 	justify-content: space-around;
 }
@@ -120,16 +117,22 @@ footer nav{
 	font-size: 2.5em;
 }
 
+.gold-section {
+	background: #EDE3D3;
+	display: flex;
+    flex-wrap: wrap;
+}
+
 .lightgreen-section {
 	background-color: #BBD0C0;
 	margin: 0px;
 	display: flex;
+    flex-wrap: wrap;
 }
 
 .white-section {
 	background-color: #fff5f4;
 	margin: 0px;
-    text-align: center;
     text-align: center;
     padding: 5vi;
     height: auto;
@@ -141,13 +144,19 @@ img {
 }
 
 aside {
-    width: 40vw;
+    flex: 4;
+    margin: 0px;
+    flex-wrap: wrap;
+
 }
 article {
-    width: 60vw;
+    flex: 6;
 	padding: 5vi;
     text-align: center;
+    margin: 0px;
+    flex-wrap: wrap;
 }
+
 
 .image {
 	width: 100%;
@@ -164,19 +173,21 @@ article {
 }
 
 @media (max-width: 768px) {
-    section {
-        flex-direction: column;
-    }
-    aside, article {
-        flex: none;
+    
+    article {
         width: 100vw;
     }
+
+    aside {
+        width: 100vw;
+    }
+
     .image {
         flex: none;
         width: 100vw;
     }
     .grid-container {
-        width: 100%
+        width: 100vw;
     }
     .menu li {
         display: none;
@@ -215,15 +226,6 @@ article {
     .mobile-menu a:hover {
         background: #4c6358;
     }
-    .wrapper {
-        width: 100%;
-    }
-    article {
-        width: 100vw;
-    }
-    aside {
-        width: 100vh;
-    }
 }
 
 /*Image grid style*/
@@ -248,7 +250,7 @@ article {
 
 .hero-container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
     height: 50vh;
     opacity: 50%;
