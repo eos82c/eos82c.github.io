@@ -29,7 +29,7 @@ function setupCarousel(json) {
  
   var imageCount = images.childElementCount;
   var currentImage = 1;
-  var imageWidth = 600;
+  var imageWidth = 400;
   
   prev.addEventListener('click', function() {
     if(currentImage != 1) {
