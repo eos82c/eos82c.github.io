@@ -202,10 +202,7 @@ article {
         max-height: 100px;
         z-index: 1000;
     }
-    .fa-solid {
-        font-size: 2em;
-        padding: 0 0 0 4;
-    }
+
     .logo {
         height: 50px;
     }
