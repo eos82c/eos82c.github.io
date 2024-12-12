@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: "Average Sans", sans-serif; /*font from google pulled in HTML*/
+    font-family: sans-serif; /*font from google pulled in HTML*/
     background-color: #F1E3E4;
     margin: 0; /*remove 15px default margin*/
     padding: 0;
