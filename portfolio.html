@@ -1,0 +1,55 @@
+<!doctype HTML>
+<html lang="en"> <!--declares language of page-->
+<head>
+	<meta charset="utf-8"> <!--declares language of page-->
+	<meta name= "description" content="Portffolio - Laura Haggett"> <!--Description of page for SEO-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Media query for mobile devices-->
+	<title>Portffolio - Laura Haggett</title> <!--title at explorer header-->
+	<link rel="stylesheet" href="css/style.css"><!--ref to css -->
+    <script src = "tab.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+       <header>
+        <h1>Laura Haggett</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+       </header>
+       <main>
+        <section>
+            <nav class="tab">
+                <button class = "tablinks" onClick = "openPage(event, 'CoSE')" id="defaultOpen">CoSE</button>
+                <button class = "tablinks" onClick = "openPage(event, 'FoTBG')">FoTBG</button>
+                <button class = "tablinks" onClick = "openPage(event, 'CN')">CN</button>
+                <button class = "tablinks" onClick = "openPage(event, 'Other')">...</button>
+            </nav>
+            <script>
+                document.getElementById("defaultOpen").click()
+            </script>
+            <div id="CoSE" class="tabcontent">
+                <p>Grid is going to go here for CoESE</p>
+            </div>
+            <div id="FoTBG" class="tabcontent">
+                <p>Grid is going to go here for Friends of Treborth</p>
+            </div>
+            <div id="CN" class="tabcontent">
+                <p>Grid is going to go here for Coeden Noeth</p>
+            </div>
+            <div id="Other" class="tabcontent">
+                <p>Other stuff can go here</p>
+            </div>
+        </section>
+        <section class="text">
+        </section>
+       </main>
+       <footer>
+       </footer>
+    </div>
+</body>
