@@ -207,11 +207,14 @@ a:hover {
     padding: 20 20 20 20;
 }
 
-
+::selection {
+    background-color: #826074; /* Gold highlight */
+    color: #1C1D21; /* Black text */
+}
 /* Palette:
- #A0949B - Rose quartz
+#A0949B - Rose quartz
 #1C1D21 eerie black
 #F1E3E4 - Lavender blush
-#826074 - eggplant
+#826074 - Eggplant
 
 */
