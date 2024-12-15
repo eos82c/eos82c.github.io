@@ -1,6 +1,6 @@
 function openPage(evt, pageName) { //evt = clicking a tab, pageName = ID of the page tab 
     var i, tabcontent, tablinks
-    
+
     //goes through all tabs and hides everything. 
     tabcontent = document.getElementsByClassName("tabcontent"); //Tabcontent = class name = tabcontent hides anything within tabcontent
     for (i = 0; i < tabcontent.length; i++) { //i = 0 stop once i reaches the tabcontent length ie number of elements within tabcontent class, add one each time 
@@ -11,7 +11,13 @@ function openPage(evt, pageName) { //evt = clicking a tab, pageName = ID of the 
     for (i=0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
+    
+    var allSection = document.getElementById("All");
+    if (allSection) {
+        allSection.style.display = "none";
+    }
     //finds tab content section with pageName and makes it visible by setting its display style to block. 
     document.getElementById(pageName).style.display="block";
+
     evt.currentTarget.className += " active";
 }
