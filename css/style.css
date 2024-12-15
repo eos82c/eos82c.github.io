@@ -208,9 +208,10 @@ a:hover {
 }
 
 ::selection {
-    background-color: #826074; /* Gold highlight */
+    background-color: #826074; /*github being crap again*/
     color: #1C1D21; /* Black text */
 }
+
 /* Palette:
 #A0949B - Rose quartz
 #1C1D21 eerie black
