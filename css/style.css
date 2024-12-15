@@ -1,11 +1,15 @@
 html,
 body {
-    font-family: sans-serif; /*font from google pulled in HTML*/
+    font-family: "Inter", sans-serif;
+    font-size: 0.9em;
+    font-weight: 100;
     background-color: #F1E3E4;
     margin: 0; /*remove 15px default margin*/
     padding: 0;
 	width: 100vw; /*full width*/
+    line-height: 1.5;
 }
+
 
 .wrapper {
     height: 100%; /*ensure page covers whole view height, otherwise if not enough content the footer would be hanging halfway up.*/
@@ -27,18 +31,33 @@ header {
     justify-content: flex-end;
     position: fixed;
     box-sizing: border-box;
+    z-index: 100;
 
 }
 
 h1 {
-    font-size: 2em;
-    font-weight: 100;
+    font-family: "Italiana", serif; /*font from google pulled in HTML*/
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0;
+    text-align: right;
+}
+
+h2 {
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    text-align: right;
+    margin: 0;
+  }
+
+h4 {
+    margin: 0;
 }
 
 .menu ul { 
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1.5em;
     list-style-type: none;
     display: grid;
-    font-size: 1em;
 }
 
 .menu li {
@@ -74,27 +93,20 @@ main {
     align-items: center;
 }
 
-.text {
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-}
-
 .image-about {
     height: 30vh;
-    background-image: url("/images/me1.jpg");
+    background-image: url("/images/mw2.jpg");
 }
 
 a {
     color: #826074;
     text-decoration: none;
-    font-weight: bold;
+
 }
 
 a:hover {
     color: #A0949B;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .tab {
@@ -107,6 +119,9 @@ a:hover {
 }
 
 .tab button{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-size: 1.5em;
+    font-weight: 1000;
     background-color: inherit;
     border: none;
     outline: none;
@@ -140,8 +155,6 @@ a:hover {
     to {opacity: 1;}
 }
 
-
-
 .row { display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
@@ -172,13 +185,33 @@ a:hover {
       flex: 100%;
       max-width: 100%;
     }
-  }
+    .paragraph {
+        padding: 10% 0 0 20%;
+    }
+}
+
+.name {
+    margin: 0px;
+    size: 2em;
+}
+
+.paragraph {
+    padding: 3% 5% 3% 5%;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.paragraph:hover {
+    background-color: #1C1D21;
+    transform: scale(1.03);
+    color: #F1E3E4;
+    padding: 20 20 20 20;
+}
 
 
-/* #A0949B - Rose quartz
+/* Palette:
+ #A0949B - Rose quartz
 #1C1D21 eerie black
 #F1E3E4 - Lavender blush
 #826074 - eggplant
 
 */
-

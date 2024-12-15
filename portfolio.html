@@ -1,107 +1,112 @@
 <!doctype HTML>
 <html lang="en"> <!--declares language of page-->
+
 <head>
-	<meta charset="utf-8"> <!--declares language of page-->
-	<meta name= "description" content="Portffolio - Laura Haggett"> <!--Description of page for SEO-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Media query for mobile devices-->
-	<title>Portffolio - Laura Haggett</title> <!--title at explorer header-->
-	<link rel="stylesheet" href="css/style.css"><!--ref to css -->
-    <script src = "tab.js"></script>
+    <meta charset="utf-8"> <!--declares language of page-->
+    <meta name="description" content="Portffolio - Laura Haggett"> <!--Description of page for SEO-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Media query for mobile devices-->
+    <title>Portffolio - Laura Haggett</title> <!--title at explorer header-->
+    <link rel="stylesheet" href="css/style.css"><!--ref to css -->
+    <script src="/js/tab.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Average+Sans&family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
-       <header>
-        <h1>Laura Haggett</h1>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-       </header>
-       <main>
-        <section>
-            <nav class="tab">
-                <button class="tablinks" onClick="openPage(event, 'CoSE')">CoSE</button>
-                <button class="tablinks" onClick="openPage(event, 'FoTBG')">FoTBG</button>
-                <button class="tablinks" onClick="openPage(event, 'CN')">CN</button>
-                <button class="tablinks" onClick="openPage(event, 'Other')">...</button>
+        <header>
+            <section class="name">
+            <h1>Laura Haggett</h1>
+            <h2>MSc Computing Student</h2></section>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">about</a></li>
+                    <li><a href="portfolio.html">portfolio</a></li>
+                </ul>
             </nav>
-            
-            <div id="CoSE" class="tabcontent">
-                <div class="row">
-                    <div class="column">
-                        <img src="/images/portfolio/CoSE/1.png">
-                        <img src="/images/portfolio/CoSE/2.png">
-                        <img src="/images/portfolio/CoSE/3.png">
-                    </div>
-                    <div class="column">
-                        <img src="/images/portfolio/CoSE/6.png">
-                        <img src="/images/portfolio/CoSE/7.png">
-                        <img src="/images/portfolio/CoSE/8.png">
-                        <img src="/images/portfolio/CoSE/9.png">
-                    </div>
-                    <div class="column">
-                        <img src="/images/portfolio/CoSE/4.png">
-                        <img src="/images/portfolio/CoSE/5.png">
-                        <img src="/images/portfolio/CoSE/10.png">
-                    </div>
-                </div>
-            </div>
-            
-            <div id="FoTBG" class="tabcontent">
-                <div class="row">
-                    <div class="column">
-                        <img src="/images/portfolio/FoTBG/1.png">
-                        <img src="/images/portfolio/FoTBG/2.png">
-                        <img src="/images/portfolio/FoTBG/5.png">
-                    </div>
-                    <div class="column">
-                        <img src="/images/portfolio/FoTBG/3.png">
-                        <img src="/images/portfolio/FoTBG/4.png">
-                    </div>
-                    <div class="column">
-                        <img src="/images/portfolio/FoTBG/6.png">
-                        <img src="/images/portfolio/FoTBG/7.png">
-                    </div>
-                </div>
-            </div>
-            
-            <div id="CN" class="tabcontent">
-                <div class="row">
-                    <div class="column">
-                        <img src="/images/portfolio/CN/1.png">
-                        <img src="/images/portfolio/CN/1.jpg">
-                        <img src="/images/portfolio/CN/2.png">
-                        <img src="/images/portfolio/CN/8.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="/images/portfolio/CN/2.jpg">
-                        <img src="/images/portfolio/CN/3.png">
-                        <img src="/images/portfolio/CN/4.jpg">
-                        <img src="/images/portfolio/CN/6.jpg">
-                    </div>
-                    <div class="column">
-                        <img src="/images/portfolio/CN/3.jpg">
-                        <img src="/images/portfolio/CN/4.png">
-                        <img src="/images/portfolio/CN/5.png">
-                        <img src="/images/portfolio/CN/7.jpg">
+        </header>
+        <main>
+            <section>
+                <nav class="tab">
+                    <button class="tablinks" onClick="openPage(event, 'CoSE')">CoSE</button>
+                    <button class="tablinks" onClick="openPage(event, 'FoTBG')">FoTBG</button>
+                    <button class="tablinks" onClick="openPage(event, 'CN')">CN</button>
+                    <button class="tablinks" onClick="openPage(event, 'Other')">...</button>
+                </nav>
 
+                <div id="CoSE" class="tabcontent">
+                    <div class="row">
+                        <div class="column">
+                            <img src="/images/portfolio/CoSE/1.png">
+                            <img src="/images/portfolio/CoSE/2.png">
+                            <img src="/images/portfolio/CoSE/3.png">
+                        </div>
+                        <div class="column">
+                            <img src="/images/portfolio/CoSE/6.png">
+                            <img src="/images/portfolio/CoSE/7.png">
+                            <img src="/images/portfolio/CoSE/8.png">
+                            <img src="/images/portfolio/CoSE/9.png">
+                        </div>
+                        <div class="column">
+                            <img src="/images/portfolio/CoSE/4.png">
+                            <img src="/images/portfolio/CoSE/5.png">
+                            <img src="/images/portfolio/CoSE/10.png">
+                        </div>
                     </div>
                 </div>
+
+                <div id="FoTBG" class="tabcontent">
+                    <div class="row">
+                        <div class="column">
+                            <img src="/images/portfolio/FoTBG/1.png">
+                            <img src="/images/portfolio/FoTBG/2.png">
+                            <img src="/images/portfolio/FoTBG/5.png">
+                        </div>
+                        <div class="column">
+                            <img src="/images/portfolio/FoTBG/3.png">
+                            <img src="/images/portfolio/FoTBG/4.png">
+                        </div>
+                        <div class="column">
+                            <img src="/images/portfolio/FoTBG/6.png">
+                            <img src="/images/portfolio/FoTBG/7.png">
+                        </div>
+                </div>
+    </div>
+
+    <div id="CN" class="tabcontent">
+        <div class="row">
+            <div class="column">
+                <img src="/images/portfolio/CN/1.png">
+                <img src="/images/portfolio/CN/1.jpg">
+                <img src="/images/portfolio/CN/2.png">
+                <img src="/images/portfolio/CN/8.jpg">
             </div>
-            
-            <div id="Other" class="tabcontent">
-                <p>Other stuff can go here</p>
+            <div class="column">
+                <img src="/images/portfolio/CN/2.jpg">
+                <img src="/images/portfolio/CN/3.png">
+                <img src="/images/portfolio/CN/4.jpg">
+                <img src="/images/portfolio/CN/6.jpg">
             </div>
-        </section>
-        <section class="text">
-        </section>
-       </main>
-       <footer>
-       </footer>
+            <div class="column">
+                <img src="/images/portfolio/CN/3.jpg">
+                <img src="/images/portfolio/CN/4.png">
+                <img src="/images/portfolio/CN/5.png">
+                <img src="/images/portfolio/CN/7.jpg">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="Other" class="tabcontent">
+        <p>Other stuff can go here</p>
+    </div>
+    </section>
+    <section class="text">
+    </section>
+    </main>
+    <footer>
+    </footer>
     </div>
 </body>
