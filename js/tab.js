@@ -16,3 +16,5 @@ function openPage(evt, pageName) { //evt = clicking a tab, pageName = ID of the 
     document.getElementById(pageName).style.display="block";
     evt.currentTarget.className += " active";
 }
+
+//github is shit
