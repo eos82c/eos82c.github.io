@@ -10,9 +10,8 @@ body {
     line-height: 1.5;
 }
 
-
 .wrapper {
-    height: 100%; /*ensure page covers whole view height, otherwise if not enough content the footer would be hanging halfway up.*/
+    height: 100%; 
     display: flex;
     margin: 0;
     padding: 0;
