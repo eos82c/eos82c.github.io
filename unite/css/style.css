@@ -1,0 +1,117 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large; 
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    justify-items: center;
+    padding: 20px;
+}
+
+.sidenav {
+    width: 100vw;
+    background-color: #993333;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sidenav li {
+    list-style: none;
+    padding: 2vw;
+}
+
+.sidenav a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: large;
+}
+
+h3, h4 {
+    padding: 0 0 10px 0;
+}
+
+article {
+    display: block;
+    padding: 50px;
+}
+
+a {
+text-decoration: none;
+font-weight: bolder;
+color: #993333;
+}
+
+aside {
+    padding: 50px;
+    border: 1px dashed black;
+    text-align: center;
+    margin: 20px 100px;
+}
+
+aside p {
+    padding: 0 0 20px 0;
+}
+
+section {
+    display: flex;
+}
+
+.button-join {
+    background-color: white;
+    display: block;
+    padding: 10px;
+    margin: 20px;
+    font-size: larger;
+    color: #993333;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#993333;
+    color: #FFFFFF;
+    padding: 20px 20px 0px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 11pt;
+    text-align: left;
+}
+/* Mobile view */
+
+@media only screen and (max-width: 800px) {
+    body {
+      display: grid;
+    }
+    img {
+        display: none;
+    }
+    h1 {
+        font-size: large;
+    }
+    main {
+        display: block;
+    }
+  }
+
+
+/* pallette */
+/* #993333 - BU dark red */

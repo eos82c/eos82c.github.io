@@ -1,0 +1,14 @@
+{
+    "committee":[
+        {"title":"Chair", "name": "Alan Dawson", "tel": "", "email": ""},
+        {"title":"Secretary", "name": "Laura Haggett", "tel": "", "email": ""},
+        {"title":"Treasurer", "name": "Peter Hughes", "tel": "", "email": ""},
+        {"title":"Health & Safety Rep", "name": "Gareth Parry", "tel": "", "email": ""},
+        {"title":"Equalities Officer", "name": "Katie Coburn", "tel": "", "email": ""},
+        {"title":"Learning Rep", "name": "Gareth Parry", "tel": "", "email": ""},
+        {"title":"Branch Rep", "name": "David Roberts", "tel": "", "email": ""},
+        {"title":"Branch Rep", "name": "Vanessa Williams", "tel": "", "email": ""},
+        {"title":"Branch Rep", "name": "Huw Powell", "tel": "", "email": ""}
+
+    ]
+    }

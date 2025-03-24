@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unite the Union - Bangor University Branch</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+  <!-- Header - edit in header.html -->
+  <div id="header-placeholder">
+  </div>
+  <script>
+    $(function () {
+      $("#header-placeholder").load("header.html");
+    });
+  </script>
+  <!-- Header - edit in header.html -->
+  <main>
+    <!-- Nav bar - edit in nav.html -->
+    <section class="menu">
+      <script src="/js/index.js"></script>
+      <div id="nav-placeholder">
+      </div>
+      <script>
+        $(function () {
+          $("#nav-placeholder").load("nav.html");
+        });
+      </script>
+    </section>
+    <!-- Nav bar end  -->
+     
+  <article class="help">
+    <p>Blurb here about how awesome our reps are and the amazing work they do. Blurb here about how awesome our reps are
+      and the amazing work they do. Blurb here about how awesome our reps are and the amazing work they do. Blurb here
+      about how awesome our reps are and the amazing work they do.</p>
+      <h1>Committee Members</h1>
+      <table id="committeeTable">
+          <thead>
+              <tr>
+                  <th>Role </th>
+                  <th>Name </th>
+                  <th>Telephone </th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody></tbody>
+      </table>
+
+      <script src="/js/committee.js"></script>
+  </article>
+  <aside class="aside-join">
+    <h4><strong>Please note, legal assistance is available to those who have been members of the union for at least 4
+        weeks.</strong>
+      <br>New members joining with a pre-existing issue are not covered for that issue. Don't wait until you have a
+      problem before joining. <strong>
+        <a href="https://www.unitetheunion.org/members/fb-join" class="join-button">Join Today!</a></strong>
+    </h4>
+  </aside>
+</body>
+
+</html>
