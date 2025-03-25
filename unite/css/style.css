@@ -49,9 +49,9 @@ article {
 }
 
 a {
-text-decoration: none;
-font-weight: bolder;
-color: #993333;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #993333;
 }
 
 aside {
@@ -95,6 +95,13 @@ footer {
     font-size: 11pt;
     text-align: left;
 }
+
+iframe {
+    padding: 50px;
+    border: none;
+    width: 30%;
+}
+
 /* Mobile view */
 
 @media only screen and (max-width: 800px) {
@@ -110,8 +117,13 @@ footer {
     main {
         display: block;
     }
-  }
 
+    iframe {
+        padding: 50px;
+        border: none;
+        width: 70%
+      }
+  }
 
 /* pallette */
 /* #993333 - BU dark red */
